@@ -59,6 +59,12 @@ http://<wazuh-vm-ip>
 
 and start monitoring!
 
+## insatling agent on victim 
+
+in dashbord we can see an option to add agents press that.
+
+
+
 
 
 
