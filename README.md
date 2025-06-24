@@ -14,7 +14,7 @@ This project demonstrates how to simulate and detect 14 different LAN-based netw
 
 ## 🎯 Objectives
 
-- Simulate 14 common LAN-based attacks.
+- Simulate 14 Network-based attacks.
 - Detect and analyze these attacks using Suricata and Wazuh.
 - Collect `.pcap` files for packet-level investigation.
 - Generate centralized logs and alerts.
@@ -30,9 +30,7 @@ This project demonstrates how to simulate and detect 14 different LAN-based netw
 | Suricata    | Network-based IDS/IPS + packet capture     |
 | Bettercap   | Attack simulation (ARP/DNS spoofing, MITM) |
 | Wireshark   | (Optional) PCAP analysis                   |
-| tcpdump     | CLI packet capture                         |
 
 ---
 
-## 📁 Project Structure
 
