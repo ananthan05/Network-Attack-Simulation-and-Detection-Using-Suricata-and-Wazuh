@@ -6,7 +6,7 @@ This project demonstrates how to simulate and detect 14 different LAN-based netw
 
 ## 🧪 Lab Overview
 
-- **Attacker VM**: Kali Linux running Bettercap to perform LAN-based attacks.
+- **Attacker VM**: Kali Linux  to perform LAN-based attacks.
 - **Victim VM**: Ubuntu with Suricata (IDS/packet capture) and Wazuh agent.
 - **Server VM**: Wazuh Manager for collecting and analyzing security events.
 
