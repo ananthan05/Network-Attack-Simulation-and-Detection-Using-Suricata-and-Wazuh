@@ -59,13 +59,43 @@ http://<wazuh-vm-ip>
 
 and start monitoring!
 
-## insatling agent on victim 
+## 🖥️ Installing Wazuh Agent on Victim VM
 
-in dashbord we can see an option to add agents press that.
+In the Wazuh Dashboard, go to the **"Agents"** tab and click on **"Add agent"**.
 
+![Add Agent](https://github.com/user-attachments/assets/f2a762bc-6656-4002-b82b-834dadd8b7ce)
 
+### 1️⃣ Configure the Agent
 
+Fill in the required details as shown below:
 
+- **Operating system:** Linux DEB (amd64)
+- **Wazuh Manager IP:** *IP address of your Wazuh Server VM*
+- **Agent Name:** e.g., `victim` or any name you prefer
 
+Leave the other settings as default, then click **Next**.
 
+![Agent Config](https://github.com/user-attachments/assets/e9d8c9bb-99b6-4ee8-866d-fa80fd2036c4)
+
+Wazuh will provide you with a command to run on the victim machine. Copy that command.
+
+![Generated Command](https://github.com/user-attachments/assets/5d2333b8-953c-402c-8d90-16d0c733144a)
+
+### 2️⃣ Run the Command on the Victim VM
+
+Paste and run the command in your **victim VM** terminal to install and configure the Wazuh agent.
+
+![Running on Victim](https://github.com/user-attachments/assets/1b7d0f0f-1db9-4ed8-88a4-6f5b39583dc4)
+
+### 3️⃣ Start the Wazuh Agent
+
+Now enable and start the agent service with the following commands:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable wazuh-agent
+sudo systemctl start wazuh-agent
+
+```
+Once the agent starts, you will see it successfully registered and connected in the Wazuh Dashboard. ✅
 
