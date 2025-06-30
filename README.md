@@ -28,6 +28,7 @@ This project demonstrates how to simulate and detect 14 different LAN-based netw
 |-------------|--------------------------------------------|
 | Wazuh       | SIEM/log analysis (alert correlation)      |
 | Suricata    | Network-based IDS/IPS + packet capture     |
+| Zeek	      |Network traffic analysis (detects advanced attacks missed by Suricata/Wazuh)|
 | Bettercap   | Attack simulation (ARP/DNS spoofing, MITM) |
 | Wireshark   | (Optional) PCAP analysis                   |
 
