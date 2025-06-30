@@ -7,7 +7,7 @@ This project demonstrates how to simulate and detect 14 different LAN-based netw
 ## 🧪 Lab Overview
 
 - **Attacker VM**: Kali Linux  to perform LAN-based attacks.
-- **Victim VM**: Ubuntu with Suricata (IDS/packet capture) and Wazuh agent.
+- **Victim VM**: Ubuntu with Suricata (IDS/packet capture), Zeek (network traffic analysis), and Wazuh agent..
 - **Server VM**: Wazuh Manager for collecting and analyzing security events.
 
 ---
