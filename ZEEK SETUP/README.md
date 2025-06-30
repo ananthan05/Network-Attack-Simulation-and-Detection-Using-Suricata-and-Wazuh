@@ -52,3 +52,37 @@ change the inferface of your sysytem by checking `ifconfig`
 
 ![image](https://github.com/user-attachments/assets/29f1054d-80df-42fa-a6f4-e3c1b18e047d)
 
+📊 View Logs:
+
+Zeek logs are usually stored in:
+`
+```
+/opt/zeek/logs/current
+```
+
+![image](https://github.com/user-attachments/assets/9410fedb-1175-4040-87a9-0cd347c499bd)
+
+conn.log – Connection logs
+
+dns.log – DNS queries
+
+http.log – HTTP traffic
+
+notice.log – Security alerts
+
+
+### Initialize the Zeek control framework:
+
+```bash
+sudo ./zeekctl check         # Check config validity
+sudo ./zeekctl install       # Install runtime environment
+sudo ./zeekctl start         # Start Zeek monitoring
+sudo ./zeekctl deploy
+```
+go to `
+```
+cd /opt/zeek/bin
+```
+![image](https://github.com/user-attachments/assets/055bfa37-95c6-4851-9c70-1e36d4461cee)
+
+![image](https://github.com/user-attachments/assets/6f6bb6bc-7ec5-469f-be4f-9d96e22750c1)
