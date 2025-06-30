@@ -172,8 +172,7 @@ Save and close it
 
  Deploy/Restart Zeek to apply your updated configuration:
 
-```
-bash
+```bash
 cd /opt/zeek/bin
 sudo ./zeekctl deploy
 ```
