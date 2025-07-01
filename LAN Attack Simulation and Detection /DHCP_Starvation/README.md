@@ -61,3 +61,7 @@ In wazuh dashboard also we can see the log
 
 ![image](https://github.com/user-attachments/assets/c442c684-1ab5-4384-8400-e51b95d997ba)
 
+Suricata also captures the pcap which is stored under the path `/var/log/suricata/`
+
+![image](https://github.com/user-attachments/assets/9ad88070-48db-4964-8e05-e72d0e3143bf)
+
