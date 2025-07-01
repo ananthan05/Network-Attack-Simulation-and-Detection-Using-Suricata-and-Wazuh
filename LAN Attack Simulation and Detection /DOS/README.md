@@ -81,4 +81,42 @@ sudo tail -f /var/log/suricata/eve.json | jq 'select(.event_type=="alert")'
 Attack detected successfully.
 
 
+## View Alerts in Wazuh Dashboard
 
+In Wazuh :
+
+Go to Security Events or Security Dashboard
+
+Search for:`
+
+```
+data.alert.signature: [DoS] TCP SYN Flood Detected
+```
+
+![image](https://github.com/user-attachments/assets/4b7c2c2e-d077-4258-934f-6c88efe7bc25)
+
+
+### Screenshot Summary
+
+- **Signature ID**: 1000010
+- **Time Range**: Jul 1, 2025 — 11:30:00 to 12:00:00 UTC
+- **Alerts Count**: 13
+- **Attacker IP**: 10.0.2.4
+- **Victim IP**: 10.0.2.15
+
+### 📈 Graph Analysis
+
+- The histogram shows spikes of alert activity, aligned with TCP SYN flood bursts.
+- Helps identify attack timeframes and correlate with potential system impact.
+
+### Detailed Alert Fields
+
+| Field | Value |
+|-------|-------|
+| Signature | [DoS] TCP SYN Flood Detected |
+| Severity | 3 |
+| Source IP | 10.0.2.4 |
+| Destination IP | 10.0.2.15 |
+| Packet Source | wire/pcap |
+| Status | Allowed |
+| Timestamps | Precise attack times logged |
