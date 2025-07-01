@@ -85,7 +85,7 @@ Attack detected successfully.
 
 In Wazuh :
 
-Go to Security Events or Security Dashboard
+Go to Discover or wazuh alerts
 
 Search for:`
 
