@@ -120,3 +120,64 @@ data.alert.signature: [DoS] TCP SYN Flood Detected
 | Packet Source | wire/pcap |
 | Status | Allowed |
 | Timestamps | Precise attack times logged |
+
+### Attack Timeline (Line Graph)
+
+** Goal:**  
+Visualize the trend of SYN flood alerts over time to detect spikes and duration of attacks.
+ Steps:
+
+1. Navigate to **Wazuh Dashboard → Visualize Library**
+2. Click **Create visualization** → Choose **Line**
+3. Select index pattern:  
+
+Choose index: wazuh-alerts-*
+
+ In **X-axis (horizontal)**:
+- Aggregation: `Date Histogram`
+- Field: `@timestamp` or `data.timestamp`
+- Interval: `Auto` *(or manually set to 1m or 10s for rapid floods)*
+![image](https://github.com/user-attachments/assets/763cb20a-9667-44ec-9537-751a6bf0efdb)
+
+
+In **Y-axis (vertical)**:
+- Aggregation: `Count` (default)
+
+ Add a filter to show only SYN Flood alerts:
+
+Value: [DoS] TCP SYN Flood Detected
+
+![image](https://github.com/user-attachments/assets/0656dea9-c973-4e1f-bed3-3d89660a107a)
+
+
+Click Save, name it: SYN Flood Timeline.
+
+###  Top Target Ports (Bar Chart)
+
+**Goal:**  
+Identify which **destination ports** are most targeted by SYN flood attacks.
+
+steps:
+
+1. Create a new **Bar chart**
+2. Index pattern:
+
+Index: wazuh-alerts-*
+
+ Configure **X-axis**:
+- Aggregation: `Terms`
+- Field: `data.dest_port`
+- Size: `10` (top 10 target ports)
+
+Add a filter::
+
+data.alert.signature: [DoS] TCP SYN Flood Detected
+
+![image](https://github.com/user-attachments/assets/4c3df6d1-e0f0-4e43-8627-7b1ddbfec5a0)
+
+Save as: Targeted Destination Ports
+
+
+The most targeted port from the dataset is: `443`
+
+
