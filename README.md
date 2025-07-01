@@ -31,6 +31,7 @@ This project demonstrates how to simulate and detect 14 different LAN-based netw
 | Zeek        | Network traffic analysis (detects advanced attacks missed by Suricata/Wazuh) |
 | Bettercap   | Attack simulation (ARP/DNS spoofing, MITM) |
 | hping3      | TCP SYN flood (DoS)                        |
+|Hydra	      |Brute-force attack tool (used to automate login attempts on services like FTP, SSH, HTTP, etc.)|
 | Yersinia    | Layer 2 attack simulation (e.g., DHCP, STP, CDP attacks) |
 | Wireshark   | (Optional) PCAP analysis                   |
 ---
