@@ -30,6 +30,7 @@ This project demonstrates how to simulate and detect 14 different LAN-based netw
 | Suricata    | Network-based IDS/IPS + packet capture     |
 | Zeek	      |Network traffic analysis (detects advanced attacks missed by Suricata/Wazuh)|
 | Bettercap   | Attack simulation (ARP/DNS spoofing, MITM) |
+| hping3      | TCP SYN flood(DOS)                         |
 | Wireshark   | (Optional) PCAP analysis                   |
 
 ---
