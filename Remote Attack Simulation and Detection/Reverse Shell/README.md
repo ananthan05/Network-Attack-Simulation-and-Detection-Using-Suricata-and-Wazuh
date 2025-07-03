@@ -105,4 +105,68 @@ Now go check if the reverse shell was successful on the attacker machine.
 
 successful .
 
+## Detect the reverse shell 
+
+To detect this reverse shell activity, we need to add custom rules in Suricata-
+
+```
+sudo gedit /etc/suricata/rules/reverseshell.rules 
+```
+
+add this
+ 
+```rule 
+alert ip any any -> any 4444 (msg:"Possible Reverse Shell Connection to TCP 4444"; sid:1000003; rev:1; classtype:trojan-activity;)
+
+```
+
+
+```
+sudo gedit /etc/suricata/rules/reverseshell1.rules 
+```
+add this
+ 
+```rule 
+alert tcp any any -> any any (msg:"Reverse Shell Payload Detected"; content:"bash -i >& /dev/tcp/"; sid:1000004; rev:1; classtype:trojan-activity;)
+
+```
+
+![image](https://github.com/user-attachments/assets/b347d7bb-3ca0-44e2-96bc-947a4fc6787e)
+
+Test config:
+
+```bash
+sudo suricata -T -c /etc/suricata/suricata.yaml -v
+```
+Restart Suricata:
+
+```bash
+sudo systemctl restart suricata
+```
+Now  reverse shell will get detected.
+
+Suricata Logs-
+
+Check for alerts on the victim:
+
+for live logs -
+```bash
+sudo tail -f /var/log/suricata/eve.json | jq 'select(.event_type=="alert")'
+```
+![image](https://github.com/user-attachments/assets/16c7f039-17f1-4387-b212-18476ff26768)
+
+
+![image](https://github.com/user-attachments/assets/f2e2c051-027e-4020-b63b-cb130b1ff210)
+
+For better understanding, it’s a good idea to check the fast.log
+
+```bash
+sudo tail -f /var/log/suricata/fast.log
+```
+![image](https://github.com/user-attachments/assets/084f84e1-5781-4c82-9a45-548ac98b973a)
+
+Attack detected successfully.
+
+## View Alerts in Wazuh Dashboard
+
 
