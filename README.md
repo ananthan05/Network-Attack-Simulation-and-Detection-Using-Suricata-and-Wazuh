@@ -14,7 +14,7 @@ This project demonstrates how to simulate and detect 14 different LAN-based netw
 
 ## 🎯 Objectives
 
-- Simulate 14 Network-based attacks.
+- Simulate 11 Network-based attacks.
 - Detect and analyze these attacks using Suricata and Wazuh.
 - Collect `.pcap` files for packet-level investigation.
 - Generate centralized logs and alerts.
