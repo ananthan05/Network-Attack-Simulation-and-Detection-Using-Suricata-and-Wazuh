@@ -169,4 +169,15 @@ Attack detected successfully.
 
 ## View Alerts in Wazuh Dashboard
 
+In Wazuh :
+
+Go to Discover or wazuh alerts
+
+filter for  for:
+
+![image](https://github.com/user-attachments/assets/665a1b50-42d7-4564-80ec-f032d31b56c5)
+
+
+![image](https://github.com/user-attachments/assets/8dcb08e0-aa93-4715-ae01-0876824ee107)
+
 
