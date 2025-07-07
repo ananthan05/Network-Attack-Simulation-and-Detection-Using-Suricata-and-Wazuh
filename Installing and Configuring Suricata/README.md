@@ -107,8 +107,15 @@ Scroll to the bottom and add the following configuration block inside the <ossec
   <location>/var/log/suricata/eve.json</location>
 </localfile>
 ```
+```xml
+<localfile>
+  <log_format>syslog</log_format>
+  <location>/var/log/suricata/fast.log</location>
+</localfile>
+```
 
-![image](https://github.com/user-attachments/assets/f9391de0-adb0-439a-a27b-e4387ca94443)
+![image](https://github.com/user-attachments/assets/01d3c705-a8ac-40d3-96c9-8b8eee3221d7)
+
 
 💡 Make sure this block is placed inside the <ossec_config> root element and not within any comments.
 
