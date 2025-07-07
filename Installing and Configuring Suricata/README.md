@@ -62,15 +62,15 @@ af-packet:
 
 ![image](https://github.com/user-attachments/assets/964d4fa3-e68c-43ea-b469-451d407ca5c1)
 
-add the rules we downloaded also like this 
+add the rules we downloaded and the path `/etc/suricata/rules` also like this 
 ```
 "*.rules"
 ```
-![image](https://github.com/user-attachments/assets/9fe7c87e-9e4a-4a59-bfc2-dae602af8705)
+![image](https://github.com/user-attachments/assets/0a30a610-8658-4836-80ce-b8f297071de8)
 
 And update all the configurations as shown in the screenshot below.
 
-![image](https://github.com/user-attachments/assets/70093394-1b66-4489-8a93-265917d2e310)
+![image](https://github.com/user-attachments/assets/1c4f807d-b575-4ea9-ae0e-10dbf5e19d3a)
 
 ![image](https://github.com/user-attachments/assets/2984a71c-a0fe-4f84-9288-4d0ce053d025)
 
