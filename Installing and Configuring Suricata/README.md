@@ -83,6 +83,14 @@ And update all the configurations as shown in the screenshot below.
 
 💡 Tip: Use ip a to check your interface name.
 
+checks whether Suricata’s configuration file (suricata.yaml) and all related rule/log files are valid and ready to run 
+
+```
+sudo suricata -T -c /etc/suricata/suricata.yaml -v
+```
+
+![image](https://github.com/user-attachments/assets/540d31a9-0cf9-47f1-a611-24168fb20d57)
+
 🔁 Step 4: Restart Suricata
 Apply the changes by restarting the Suricata service:
 
