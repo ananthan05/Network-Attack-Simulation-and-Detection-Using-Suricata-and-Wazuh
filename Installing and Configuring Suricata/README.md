@@ -31,6 +31,10 @@ sudo chmod 640 /etc/suricata/rules/*.rules
 
 Edit the Suricata configuration file to set your local network and rule paths:
 
+```
+sudo gedit  /etc/suricata/suricata.yaml
+```
+
 ```yaml
 # /etc/suricata/suricata.yaml
 
@@ -52,6 +56,11 @@ pcap-log:
 af-packet:
   - interface: eth0               # Use your actual network interface (e.g., enp0s3 if on VirtualBox)
 ```
+![image](https://github.com/user-attachments/assets/93b8b295-f691-47d8-97c5-77c6d1ab9f1d)
+
+![image](https://github.com/user-attachments/assets/9683488a-2da3-4941-a11c-6c1da08d1d2a)
+
+![image](https://github.com/user-attachments/assets/964d4fa3-e68c-43ea-b469-451d407ca5c1)
 
 💡 Tip: Use ip a to check your interface name.
 
