@@ -62,6 +62,25 @@ af-packet:
 
 ![image](https://github.com/user-attachments/assets/964d4fa3-e68c-43ea-b469-451d407ca5c1)
 
+add the rules we downloaded also like this 
+```
+"*.rules"
+```
+![image](https://github.com/user-attachments/assets/9fe7c87e-9e4a-4a59-bfc2-dae602af8705)
+
+And update all the configurations as shown in the screenshot below.
+
+![image](https://github.com/user-attachments/assets/70093394-1b66-4489-8a93-265917d2e310)
+
+![image](https://github.com/user-attachments/assets/2984a71c-a0fe-4f84-9288-4d0ce053d025)
+
+![image](https://github.com/user-attachments/assets/06b448b6-ad4d-4b91-8c7c-a177a59fcc69)
+
+![image](https://github.com/user-attachments/assets/ddde1923-8ad2-4337-9208-94bcc556e9ea)
+
+![image](https://github.com/user-attachments/assets/a9a7baed-ea0f-4fb4-ad38-b1d936a0c311)
+
+
 💡 Tip: Use ip a to check your interface name.
 
 🔁 Step 4: Restart Suricata
