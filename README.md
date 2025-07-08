@@ -14,7 +14,7 @@ This project demonstrates how to simulate and detect different LAN-based and Rem
 
 ## 🎯 Objectives
 
-- Simulate 10 Network-based attacks.
+- Simulate 9 Network-based attacks.
 - Detect and analyze these attacks using Suricata and Wazuh.
 - Collect `.pcap` files for packet-level investigation.
 - Generate centralized logs and alerts.
@@ -33,6 +33,7 @@ This project demonstrates how to simulate and detect different LAN-based and Rem
 | hping3      | TCP SYN flood (DoS)                        |
 |Hydra	      |Brute-force attack tool (used to automate login attempts on services like FTP, SSH, HTTP, etc.)|
 | Yersinia    | Layer 2 attack simulation (e.g., DHCP, STP, CDP attacks) |
+| dnscat2     | Covert communication tool using DNS tunneling (C2 over DNS)          |
 | Wireshark   | (Optional) PCAP analysis                   |
 ---
 
