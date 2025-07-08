@@ -9,7 +9,7 @@ Simulate a **remote SSH brute-force attack** using Hydra and detect the maliciou
 | Role     | Machine | IP Address         | Network Mode     |
 |----------|---------|--------------------|------------------|
 | Attacker | Kali    | `172.17.128.157`   | Bridged Adapter  |
-| Victim   | Ubuntu  | `10.0.2.15`        | NAT              |
+| Victim   | Ubuntu  | `10.0.2.15`        | NAT Network      |
 
 > 💡 The victim runs an SSH server on port `22`, which is forwarded to host port `2222` so the attacker (on a different subnet) can access it using the host IP.
 
@@ -43,7 +43,7 @@ sudo systemctl status ssh
 
 On VirtualBox (Victim):
 
-- Go to **Settings > Network > Adapter 1 (NAT) > Advanced > Port Forwarding**
+- Go to **Tools > Network >  NAT Network > Port Forwarding**
 - Add a rule:
   - **Protocol**: TCP
   - **Host IP**: blank
@@ -53,7 +53,8 @@ On VirtualBox (Victim):
 
 ---
 
-![image](https://github.com/user-attachments/assets/663c0b01-7fa8-49c2-8d73-4be4b8be56a2)
+![image](https://github.com/user-attachments/assets/4f202f67-377b-482f-8f3d-be6d6f2fbe9a)
+
 
 ##  Step 3.1 : Hydra Brute Force from Attacker (Kali)
 
@@ -100,3 +101,5 @@ sudo tail -f /var/log/suricata/fast.log
 The attack was successfully detected.
 
 ## Step 6: View Detection in Wazuh Dashboard
+
+![image](https://github.com/user-attachments/assets/40a6d503-dc76-4ec0-ac36-78c95fe474f3)
