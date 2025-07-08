@@ -97,3 +97,7 @@ Suricata by default has dns null record query detecton rule on the `Emerging Thr
 ![image](https://github.com/user-attachments/assets/7c338d7b-9536-47c3-9629-f3878f33a1dd)
 
 Because VirtualBox port forwarding was used. The victim sends DNS packets to the host IP, which forwards them to the attacker. From the victim’s and Suricata’s perspective, the destination is still the host.
+
+![image](https://github.com/user-attachments/assets/82ab62a2-a90d-4f94-bbfb-8bc7f7178b8a)
+
+The attack logs could be seen in wazuh also
