@@ -101,5 +101,10 @@ sudo tail -f /var/log/suricata/fast.log
 The attack was successfully detected.
 
 ## Step 6: View Detection in Wazuh Dashboard
+In Wazuh :
+
+Go to Discover or wazuh alerts
+
+filter for for: fastlog path.
 
 ![image](https://github.com/user-attachments/assets/40a6d503-dc76-4ec0-ac36-78c95fe474f3)
