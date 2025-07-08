@@ -1,6 +1,6 @@
 # Simulating and Detecting LAN Attacks Using Wazuh and Suricata
 
-This project demonstrates how to simulate and detect 14 different LAN-based network attacks using an isolated virtual lab environment. It combines offensive (attacks) and defensive (detection) techniques using powerful open-source tools: **Wazuh** (SIEM), **Suricata** (IDS/IPS), and **Bettercap** (attack simulation).
+This project demonstrates how to simulate and detect different LAN-based and Remote network attacks using an isolated virtual lab environment. It combines offensive (attacks) and defensive (detection) techniques using powerful open-source tools: **Wazuh** (SIEM), **Suricata** (IDS/IPS), and **Bettercap** (attack simulation).
 
 ---
 
